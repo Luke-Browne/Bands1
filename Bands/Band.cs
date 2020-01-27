@@ -13,6 +13,8 @@ namespace Bands
         public DateTime YearFormed { get; set; }
         public string Members { get; set; }
 
+        public List<Album> Albums = new List<Album>();
+
         public Band() : this("Unknown", new DateTime(0,1,1), "Unknown")
         {
 

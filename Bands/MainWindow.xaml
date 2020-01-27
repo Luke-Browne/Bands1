@@ -8,16 +8,16 @@
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="97,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="35" Height="40"><Run Text="Bands"/><LineBreak/><Run/></TextBlock>
-        <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="291" Margin="62,100,0,0" VerticalAlignment="Top" Width="234"/>
+        <ListBox x:Name="lbxBands" HorizontalAlignment="Left" Height="291" Margin="62,100,0,0" VerticalAlignment="Top" Width="234" SelectionChanged="LbxBands_SelectionChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="62,55,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="31"><Run Text="Genre"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
         <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="120,64,0,0" VerticalAlignment="Top" Width="176" RenderTransformOrigin="0.462,-0.814" SelectionChanged="ComboBox_SelectionChanged"/>
         <TextBlock HorizontalAlignment="Left" Margin="335,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="25" Height="40"><Run Text="Band Information"/><LineBreak/><Run/></TextBlock>
         <ListBox x:Name="lbxAlbums" HorizontalAlignment="Left" Margin="335,198,0,28" Width="305"/>
         <TextBlock HorizontalAlignment="Left" Margin="335,73,0,0" TextWrapping="Wrap" Text="Formed : " VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock x:Name="yearTxt" HorizontalAlignment="Left" Margin="481,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock x:Name="yearTxt" HorizontalAlignment="Left" Margin="409,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock x:Name="membersTxt" HorizontalAlignment="Left" Margin="424,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock HorizontalAlignment="Left" Margin="335,100,0,0" TextWrapping="Wrap" Text="Members :" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="428,153,0,0" TextWrapping="Wrap" Text="Albums" VerticalAlignment="Top" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="335,153,0,0" TextWrapping="Wrap" Text="Albums" VerticalAlignment="Top" FontSize="30"/>
 
     </Grid>
 </Window>
