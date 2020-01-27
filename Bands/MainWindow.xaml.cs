@@ -37,12 +37,14 @@ namespace Bands
             comboBox1.Items.Add("Indie");
             comboBox1.SelectedItem = ("All");
 
-            Band Band1 = new Band("Muse", "1994", "Matt Bellamy, Chris Wolstenholme, Dominic Howard");
-            Band Band2 = new Band("Blur", "1988", "Damon Albarn, Graham Coxon, Alex James, Dave Rowntree");
-            Band Band3 = new Band("Crush 40", "1998", "Johnny Gioeli, Tomoya Ohtani, Jun Senoue");
-            Band Band4 = new Band("Gorillaz", "1998", "Damon Albarn, Jamie Hewlett, Paul Simonon, Mike Smith, Remi Kabaka Jr, Mick Jones, Jean-Michael Jarre, Danger Mouse");
-            Band Band5 = new Band("Red Hot Chilli Peppers", "1983", "John Frusciante, Chad Smith, Anthony Kliedis, Flea, Hillel Slovak, Jack Irons");
-            Band Band6 = new Band("Radiohead", "1985", "Thom Yorke, Jonny Greenwood, Ed O'Brien, Colin Greenwood, Philip Selway");
+            Band Band1 = new RockBand("Blur", new DateTime(1989, 3, 27), "Damon Albarn, Alex James, Graham Coxon, Dave Rowntree");
+            Band Band2 = new RockBand("Muse", new DateTime(1994, 6, 11), "Matt Bellamy, Chris Wolstenholme, Dominic Howard");
+
+            Band Band3 = new PopBand("A-ha", new DateTime(1982, 4, 7), "Morten Harket, Magne Furuholmen, Paul Waaktaar-Savoy");
+            Band Band4 = new PopBand("Take That", new DateTime(1990, 11, 14), "Robbie Williams, Mark Owen, Howard Donald, Gary Barlow, Jason Orange");
+
+            Band Band5 = new IndieBand("Bloc Party", new DateTime(1999, 2, 17), "Gordon Moakes, Russell Lissack, Kele Okereke");
+            Band Band6 = new IndieBand("Arcade Fire", new DateTime(2001, 5, 21), "Win Butler, Richard Reed Parry, Matt Bauder, William Butler, Jeremey Gara, Howard Bilerman, Tim Kingsbury");
 
             allBands.Add(Band1);
             allBands.Add(Band2);
@@ -55,7 +57,7 @@ namespace Bands
             lbxBands.ItemsSource = allBands;
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void lbxBands_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
